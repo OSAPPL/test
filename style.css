@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono&display=swap');
+
+* {
+    padding: 1rem;
+}
+
+
+
+body {
+  
+    background-image: url("https://images.pexels.com/photos/53594/blue-clouds-day-fluffy-53594.jpeg?cs=srgb&dl=pexels-pixabay-53594.jpg&fm=jpg");
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.header {
+    font-family: 'sono', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    color: white;
+
+
+}
+
+a {
+    color: black;
+}
+
+
+
+@keyframes ButtonD {
+    from {
+        border-radius: 0rem;
+        color: black;
+    }
+
+    to {
+        border-radius: 3rem;
+        color: green
+    }
+}
+
+@keyframes ButtonDR {
+    from {
+        border-radius: 3rem;
+        color: green;
+    }
+
+    to {
+        border-radius: 0rem;
+        color: black;
+    }
+}
+
+#darkMode {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 0rem;
+    font-weight: bold;
+    font-family: 'sono', sans-serif;
+
+    animation-name: ButtonDR;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+
+}
+
+#LightMode:hover {
+    animation-name: ButtonD;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+
+#LightMode {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 0rem;
+    font-weight: bold;
+    font-family: 'sono', sans-serif;
+
+    animation-name: ButtonDR;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+
+}
+
+#darkMode:hover {
+    animation-name: ButtonD;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+
+.HeadTime {
+    font-family: 'sono', sans-serif;
+    font-size: 1.95rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+
+}
+
+#img{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.input-area {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.input-field {
+    width: 25rem;
+    height: 4.5rem;
+    border-radius: 3rem;
+    border-color: red;
+    font-family: 'sono', sans-serif;
+    font-size: 1.75rem;
+}
+
+
+.input-field:hover {
+    width: 30rem;
+    height: 4.5rem;
+    border-radius: 3rem;
+    border-color: red;
+    font-family: 'sono', sans-serif;
+    font-size: 1.75rem;
+}
+
+.Button {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1rem;
+    padding-top: 0.5rem;
+}
+
+@keyframes blurEfectAnimation {
+    from {
+        backdrop-filter: blur(0px);
+    }
+
+    to {
+        backdrop-filter: blur(10px);
+    }
+}
+
+@keyframes blurEfectAnimationR {
+    from {
+        backdrop-filter: blur(10px);
+    }
+
+    to {
+        backdrop-filter: blur(0px);
+    }
+}
+
+
+.resault-area {
+    justify-content: center;
+    border: 0.5rem solid black;
+    border-radius: 1rem;
+    background-color: transparent;
+    padding: auto;
+    font-family: 'sono', sans-serif;
+    animation-name: blurEfectAnimationR;
+    animation-duration: 3s;
+}
+
+
+.resault-area:hover {
+    animation-name: blurEfectAnimation;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+
+    /* backdrop-filter: blur(10px);*/
+}
+
+footer {
+    font-family: 'sono', sans-serif;
+    justify-content: center;
+}

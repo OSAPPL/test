@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <link rel="icon"
+        href="data:image/jpeg;base64,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"
+        id="lin">
+    <link rel="stylesheet" href="style.css">
+    <script src="logic.js"></script>
+
+    <header class="header" id="head"> <a href="https://osappl.github.io/weather"> Weather Map</a></header>
+    <header class="HeadTime">
+        <h1 id="h">
+            <h1 id="M">3</h1>
+        </h1>
+
+        
+    </header>
+    
+</head>
+
+<body>
+    <div class="main">
+        <div class="input-area">
+            <div class="input">
+                <input type="text" class="input-field" placeholder="enter the city" id="userInput">
+            </div>
+
+            <div class="search-button">
+                <button onclick=Search()><img src="https://static.thenounproject.com/png/977009-200.png"
+                        alt="search lense" class="Button"></button>
+            </div>
+        </div>
+
+        <div class="resault-area" id="ligh">
+
+
+            <h1 id="_weather">
+                <h1 id="word"></h1>
+            </h1>
+
+            <u>
+                <h1 id="_description"></h1>
+            </u>
+
+            <u>
+                <h1 id="Status"></h1>
+            </u>
+
+            <h1>
+                <ul>
+                    <li id="state_feelsLikeTemp"></li>
+                    <li id="state_humid"></li>
+                    <li id="state_pressure"></li>
+                    <li id="state_temp"></li>
+                    <li id="state_temp.max"></li>
+                    <li id="state_temp.min"></li>
+                    <li id="state_weather_main"></li>
+                    <li id="wind_degreees"></li>
+                    <li id="wind_speed"></li>
+                    <li id="sys_sunrise"></li>
+                    <li id="sys_sunset"></li>
+                </ul>
+            </h1>
+
+            <u>
+                <h1 id="_locations"></h1>
+            </u>
+
+            <h1>
+                <ul>
+                    <li id="Long_"></li>
+                    <li id="Lati_"></li>
+
+                </ul>
+            </h1>
+
+            <h1 ><a  id="Link" href="" >see More About </a></h1>
+
+
+        </div>
+    </div>
+
+    <button id="darkMode" onclick=DarkMode()>Dark Mode</button>
+    <button id="LightMode" onclick=LighMode()>Light Mode</button>
+
+   
+
+    <footer id="foote">
+  
+        <h1 id="cou"></h1>
+    </footer>
+   
+    <img  src="" alt="" id="img" class="header-down">
+</body>
+
+</html>
